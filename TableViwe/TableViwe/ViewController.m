@@ -19,7 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    arrayTabela = [[NSArray alloc] initWithObjects:@"Brasil", @"Argentina", @"Chile", @"Uruguai", nil];
+    arrayTabela = [[NSArray alloc] initWithObjects:@"Brasil", @"Argentina", @"Chile", @"Uruguai", @"Paraguai", @"Bolivia", nil];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -35,14 +35,16 @@
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if(section == 0)
-        return 3;
-    else
-        return 2;
+    return [arrayTabela count];
+}
+
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return @"Países";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -52,16 +54,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"Linha %i seção %i", indexPath.row, indexPath.section];
+    cell.textLabel.text = [arrayTabela objectAtIndex:indexPath.row];
     
     return cell;
 }
 
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    if(section == 0)
-        return @"Primeira seção";
-    else
-        return @"Segunda seção";
-}
 
 @end
