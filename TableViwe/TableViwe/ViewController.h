@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
+    
+
+@property(nonatomic, strong) NSArray* arrayTabela;
 
 @end
