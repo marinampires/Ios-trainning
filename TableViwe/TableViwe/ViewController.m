@@ -19,12 +19,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    arrayTabela = [[NSMutableArray alloc] initWithObjects:@"Brasil", @"Argentina", @"Chile", @"Uruguai", @"Paraguai", @"Bolivia", nil];
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    arrayTabela = [[NSMutableArray alloc] init];
     
+    NSDictionary* dictBrasil = [NSDictionary dictionaryWithObjectsAndKeys:@"Brasil", @"pais", @"Português", @"idioma", @"Brazil.gif", @"bandeira", nil];
+
+    [arrayTabela addObject:dictBrasil];
+    
+    NSDictionary* dictArgentina = [NSDictionary dictionaryWithObjectsAndKeys:@"Argentina", @"pais", @"Espanhol", @"idioma", @"Argentina.gif", @"bandeira", nil];
+    
+    [arrayTabela addObject:dictArgentina];
+    
+    NSDictionary* dictUsa = [NSDictionary dictionaryWithObjectsAndKeys:@"EUA", @"pais", @"Inglês", @"idioma", @"USA.gif", @"bandeira", nil];
+    
+    [arrayTabela addObject:dictUsa];
+    
+    self.tableView.rowHeight = 60;
+    
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;    
 }
 
 - (void)viewDidUnload
@@ -55,10 +66,13 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if(cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    cell.textLabel.text = [arrayTabela objectAtIndex:indexPath.row];
+    NSDictionary* dict = [arrayTabela objectAtIndex:indexPath.row];
+    cell.textLabel.text = [dict objectForKey:@"pais"];
+    cell.detailTextLabel.text = [dict objectForKey:@"idioma"];
+    cell.imageView.image = [UIImage imageNamed:[dict objectForKey:@"bandeira"]];
     
     return cell;
 }
