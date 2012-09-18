@@ -19,8 +19,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    arrayTabela = [[NSArray alloc] initWithObjects:@"Brasil", @"Argentina", @"Chile", @"Uruguai", @"Paraguai", @"Bolivia", nil];
-	// Do any additional setup after loading the view, typically from a nib.
+    arrayTabela = [[NSMutableArray alloc] initWithObjects:@"Brasil", @"Argentina", @"Chile", @"Uruguai", @"Paraguai", @"Bolivia", nil];
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    self.navigationItem.rightBarButtonItem = addButton;
+    
 }
 
 - (void)viewDidUnload
@@ -59,5 +63,23 @@
     return cell;
 }
 
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    return YES;
+}
+
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [arrayTabela removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    }
+}
+
+-(void)insertNewObject:(id) sender{
+    int posicao = [arrayTabela count];
+    [self.arrayTabela insertObject:@"EU" atIndex:posicao];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:posicao inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
+}
 
 @end

@@ -11,6 +11,6 @@
 @interface ViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
     
 
-@property(nonatomic, strong) NSArray* arrayTabela;
+@property(nonatomic, strong) NSMutableArray* arrayTabela;
 
 @end
