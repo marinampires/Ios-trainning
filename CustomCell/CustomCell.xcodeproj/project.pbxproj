@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8FC2AEC1609122700A66E76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC2AEB1609122700A66E76 /* UIKit.framework */; };
+		F8FC2AEE1609122700A66E76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC2AED1609122700A66E76 /* Foundation.framework */; };
+		F8FC2AF01609122700A66E76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC2AEF1609122700A66E76 /* CoreGraphics.framework */; };
+		F8FC2AF61609122700A66E76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8FC2AF41609122700A66E76 /* InfoPlist.strings */; };
+		F8FC2AF81609122700A66E76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC2AF71609122700A66E76 /* main.m */; };
+		F8FC2AFC1609122700A66E76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC2AFB1609122700A66E76 /* AppDelegate.m */; };
+		F8FC2AFF1609122700A66E76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC2AFE1609122700A66E76 /* ViewController.m */; };
+		F8FC2B021609122700A66E76 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8FC2B001609122700A66E76 /* ViewController.xib */; };
+		F8FC2B0A1609129300A66E76 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC2B091609129300A66E76 /* MyCell.m */; };
+		F8FC2B0C160912DD00A66E76 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8FC2B0B160912DD00A66E76 /* MyCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F8FC2AE71609122700A66E76 /* CustomCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8FC2AEB1609122700A66E76 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F8FC2AED1609122700A66E76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8FC2AEF1609122700A66E76 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F8FC2AF31609122700A66E76 /* CustomCell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomCell-Info.plist"; sourceTree = "<group>"; };
+		F8FC2AF51609122700A66E76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8FC2AF71609122700A66E76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8FC2AF91609122700A66E76 /* CustomCell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomCell-Prefix.pch"; sourceTree = "<group>"; };
+		F8FC2AFA1609122700A66E76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8FC2AFB1609122700A66E76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8FC2AFD1609122700A66E76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F8FC2AFE1609122700A66E76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F8FC2B011609122700A66E76 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F8FC2B081609129300A66E76 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		F8FC2B091609129300A66E76 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		F8FC2B0B160912DD00A66E76 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8FC2AE41609122700A66E76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FC2AEC1609122700A66E76 /* UIKit.framework in Frameworks */,
+				F8FC2AEE1609122700A66E76 /* Foundation.framework in Frameworks */,
+				F8FC2AF01609122700A66E76 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8FC2ADC1609122700A66E76 = {
+			isa = PBXGroup;
+			children = (
+				F8FC2B0B160912DD00A66E76 /* MyCell.xib */,
+				F8FC2B081609129300A66E76 /* MyCell.h */,
+				F8FC2B091609129300A66E76 /* MyCell.m */,
+				F8FC2AF11609122700A66E76 /* CustomCell */,
+				F8FC2AEA1609122700A66E76 /* Frameworks */,
+				F8FC2AE81609122700A66E76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8FC2AE81609122700A66E76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC2AE71609122700A66E76 /* CustomCell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8FC2AEA1609122700A66E76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC2AEB1609122700A66E76 /* UIKit.framework */,
+				F8FC2AED1609122700A66E76 /* Foundation.framework */,
+				F8FC2AEF1609122700A66E76 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8FC2AF11609122700A66E76 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC2AFA1609122700A66E76 /* AppDelegate.h */,
+				F8FC2AFB1609122700A66E76 /* AppDelegate.m */,
+				F8FC2AFD1609122700A66E76 /* ViewController.h */,
+				F8FC2AFE1609122700A66E76 /* ViewController.m */,
+				F8FC2B001609122700A66E76 /* ViewController.xib */,
+				F8FC2AF21609122700A66E76 /* Supporting Files */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		F8FC2AF21609122700A66E76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC2AF31609122700A66E76 /* CustomCell-Info.plist */,
+				F8FC2AF41609122700A66E76 /* InfoPlist.strings */,
+				F8FC2AF71609122700A66E76 /* main.m */,
+				F8FC2AF91609122700A66E76 /* CustomCell-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8FC2AE61609122700A66E76 /* CustomCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8FC2B051609122700A66E76 /* Build configuration list for PBXNativeTarget "CustomCell" */;
+			buildPhases = (
+				F8FC2AE31609122700A66E76 /* Sources */,
+				F8FC2AE41609122700A66E76 /* Frameworks */,
+				F8FC2AE51609122700A66E76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomCell;
+			productName = CustomCell;
+			productReference = F8FC2AE71609122700A66E76 /* CustomCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8FC2ADE1609122700A66E76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Marina Melo Pires";
+			};
+			buildConfigurationList = F8FC2AE11609122700A66E76 /* Build configuration list for PBXProject "CustomCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F8FC2ADC1609122700A66E76;
+			productRefGroup = F8FC2AE81609122700A66E76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8FC2AE61609122700A66E76 /* CustomCell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8FC2AE51609122700A66E76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FC2AF61609122700A66E76 /* InfoPlist.strings in Resources */,
+				F8FC2B021609122700A66E76 /* ViewController.xib in Resources */,
+				F8FC2B0C160912DD00A66E76 /* MyCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8FC2AE31609122700A66E76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FC2AF81609122700A66E76 /* main.m in Sources */,
+				F8FC2AFC1609122700A66E76 /* AppDelegate.m in Sources */,
+				F8FC2AFF1609122700A66E76 /* ViewController.m in Sources */,
+				F8FC2B0A1609129300A66E76 /* MyCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8FC2AF41609122700A66E76 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8FC2AF51609122700A66E76 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F8FC2B001609122700A66E76 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8FC2B011609122700A66E76 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8FC2B031609122700A66E76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8FC2B041609122700A66E76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8FC2B061609122700A66E76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomCell/CustomCell-Prefix.pch";
+				INFOPLIST_FILE = "CustomCell/CustomCell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F8FC2B071609122700A66E76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomCell/CustomCell-Prefix.pch";
+				INFOPLIST_FILE = "CustomCell/CustomCell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8FC2AE11609122700A66E76 /* Build configuration list for PBXProject "CustomCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8FC2B031609122700A66E76 /* Debug */,
+				F8FC2B041609122700A66E76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8FC2B051609122700A66E76 /* Build configuration list for PBXNativeTarget "CustomCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8FC2B061609122700A66E76 /* Debug */,
+				F8FC2B071609122700A66E76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8FC2ADE1609122700A66E76 /* Project object */;
+}

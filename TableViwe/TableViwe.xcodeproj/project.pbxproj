@@ -115,6 +115,8 @@
 		F8FC2AD916090A7200A66E76 /* USA.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FC2A7516090A7200A66E76 /* USA.png */; };
 		F8FC2ADA16090A7200A66E76 /* Venezuela.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8FC2A7616090A7200A66E76 /* Venezuela.gif */; };
 		F8FC2ADB16090A7200A66E76 /* Venezuela.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FC2A7716090A7200A66E76 /* Venezuela.png */; };
+		F8FC2B151609132200A66E76 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC2B141609132200A66E76 /* MyCell.m */; };
+		F8FC2B171609133300A66E76 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8FC2B161609133300A66E76 /* MyCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -231,6 +233,9 @@
 		F8FC2A7516090A7200A66E76 /* USA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USA.png; sourceTree = "<group>"; };
 		F8FC2A7616090A7200A66E76 /* Venezuela.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Venezuela.gif; sourceTree = "<group>"; };
 		F8FC2A7716090A7200A66E76 /* Venezuela.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Venezuela.png; sourceTree = "<group>"; };
+		F8FC2B131609132200A66E76 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		F8FC2B141609132200A66E76 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		F8FC2B161609133300A66E76 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +255,7 @@
 		F8FC29E71608E40900A66E76 = {
 			isa = PBXGroup;
 			children = (
+				F8FC2B111609130900A66E76 /* Customizacao */,
 				F8FC2A1316090A7200A66E76 /* Flags */,
 				F8FC29FC1608E40900A66E76 /* TableViwe */,
 				F8FC29F51608E40900A66E76 /* Frameworks */,
@@ -406,6 +412,16 @@
 			path = Flags;
 			sourceTree = "<group>";
 		};
+		F8FC2B111609130900A66E76 /* Customizacao */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC2B131609132200A66E76 /* MyCell.h */,
+				F8FC2B141609132200A66E76 /* MyCell.m */,
+				F8FC2B161609133300A66E76 /* MyCell.xib */,
+			);
+			name = Customizacao;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -559,6 +575,7 @@
 				F8FC2AD916090A7200A66E76 /* USA.png in Resources */,
 				F8FC2ADA16090A7200A66E76 /* Venezuela.gif in Resources */,
 				F8FC2ADB16090A7200A66E76 /* Venezuela.png in Resources */,
+				F8FC2B171609133300A66E76 /* MyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +589,7 @@
 				F8FC2A031608E40900A66E76 /* main.m in Sources */,
 				F8FC2A071608E40900A66E76 /* AppDelegate.m in Sources */,
 				F8FC2A0A1608E40900A66E76 /* ViewController.m in Sources */,
+				F8FC2B151609132200A66E76 /* MyCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,6 +705,7 @@
 				F8FC2A121608E40900A66E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyCell.h"
 
 @interface ViewController ()
 
@@ -64,15 +65,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    MyCell *cell = (MyCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if(cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"MyCell" owner:nil options:nil] objectAtIndex: 0];
     }
     
     NSDictionary* dict = [arrayTabela objectAtIndex:indexPath.row];
-    cell.textLabel.text = [dict objectForKey:@"pais"];
-    cell.detailTextLabel.text = [dict objectForKey:@"idioma"];
-    cell.imageView.image = [UIImage imageNamed:[dict objectForKey:@"bandeira"]];
+    [cell.pais setText:[dict objectForKey:@"pais"]];
+        [cell.idioma setText:[dict objectForKey:@"idioma"]];
+   // cell.detailTextLabel.text = [dict objectForKey:@"idioma"];
+    [cell.bandeira setImage:[UIImage imageNamed:[dict objectForKey:@"bandeira"]]];
     
     return cell;
 }
