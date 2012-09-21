@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TableViwe/ViewController.m"
-         timestampString = "369695137.314212"
+         timestampString = "369930785.971223"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "98"
-         endingLineNumber = "98"
+         startingLineNumber = "100"
+         endingLineNumber = "100"
          landmarkName = "-insertNewObject:"
          landmarkType = "5">
       </FileBreakpoint>

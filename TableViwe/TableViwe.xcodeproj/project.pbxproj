@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F87BF9AF160CB16B00923C35 /* ModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = F87BF9AD160CB16B00923C35 /* ModalView.m */; };
+		F87BF9B0160CB16B00923C35 /* ModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87BF9AE160CB16B00923C35 /* ModalView.xib */; };
 		F8FC29F71608E40900A66E76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC29F61608E40900A66E76 /* UIKit.framework */; };
 		F8FC29F91608E40900A66E76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC29F81608E40900A66E76 /* Foundation.framework */; };
 		F8FC29FB1608E40900A66E76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC29FA1608E40900A66E76 /* CoreGraphics.framework */; };
@@ -120,6 +122,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F87BF9AC160CB16B00923C35 /* ModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalView.h; sourceTree = "<group>"; };
+		F87BF9AD160CB16B00923C35 /* ModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalView.m; sourceTree = "<group>"; };
+		F87BF9AE160CB16B00923C35 /* ModalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalView.xib; sourceTree = "<group>"; };
 		F8FC29F21608E40900A66E76 /* TableViwe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViwe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FC29F61608E40900A66E76 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F8FC29F81608E40900A66E76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -290,6 +295,9 @@
 				F8FC2A091608E40900A66E76 /* ViewController.m */,
 				F8FC2A0B1608E40900A66E76 /* ViewController.xib */,
 				F8FC29FD1608E40900A66E76 /* Supporting Files */,
+				F87BF9AC160CB16B00923C35 /* ModalView.h */,
+				F87BF9AD160CB16B00923C35 /* ModalView.m */,
+				F87BF9AE160CB16B00923C35 /* ModalView.xib */,
 			);
 			path = TableViwe;
 			sourceTree = "<group>";
@@ -576,6 +584,7 @@
 				F8FC2ADA16090A7200A66E76 /* Venezuela.gif in Resources */,
 				F8FC2ADB16090A7200A66E76 /* Venezuela.png in Resources */,
 				F8FC2B171609133300A66E76 /* MyCell.xib in Resources */,
+				F87BF9B0160CB16B00923C35 /* ModalView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +599,7 @@
 				F8FC2A071608E40900A66E76 /* AppDelegate.m in Sources */,
 				F8FC2A0A1608E40900A66E76 /* ViewController.m in Sources */,
 				F8FC2B151609132200A66E76 /* MyCell.m in Sources */,
+				F87BF9AF160CB16B00923C35 /* ModalView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

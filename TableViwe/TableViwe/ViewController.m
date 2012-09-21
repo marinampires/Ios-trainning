@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "MyCell.h"
+#import "ModalView.h"
+
 
 @interface ViewController ()
 
@@ -96,6 +98,13 @@
     [self.arrayTabela insertObject:@"EU" atIndex:posicao];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:posicao inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"Modal");
+    ModalView *modalView = [[ModalView alloc] initWithNibName:@"ModalView" bundle:nil];
+//    [self presentModalViewController:modalView animated:YES];
+    [self.navigationController pushViewController:modalView animated:YES];
 }
 
 @end
