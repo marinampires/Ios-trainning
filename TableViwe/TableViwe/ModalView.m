@@ -14,6 +14,10 @@
 
 @implementation ModalView
 
+@synthesize dict;
+@synthesize myLoading;
+@synthesize myWebView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,7 +30,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSString *string = [self.dict objectForKey:@"url"];
+    NSURL *url = [NSURL URLWithString:string];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self.myWebView loadRequest:request];
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+    [self.myLoading setHidden:FALSE];
+    [self.myLoading startAnimating];
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    [self.myLoading stopAnimating];
+    [self.myLoading setHidden:TRUE];
 }
 
 - (void)viewDidUnload
@@ -41,7 +59,4 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)fechar:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
 @end

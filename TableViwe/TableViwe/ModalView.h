@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ModalView : UIViewController
-- (IBAction)fechar:(id)sender;
+@interface ModalView : UIViewController<UIWebViewDelegate>
+@property(nonatomic, strong) NSDictionary *dict;
+@property(nonatomic, strong) IBOutlet UIWebView *myWebView;
+@property(nonatomic, strong) IBOutlet UIActivityIndicatorView *myLoading;
 
 @end

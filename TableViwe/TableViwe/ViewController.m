@@ -24,15 +24,15 @@
     [super viewDidLoad];
     arrayTabela = [[NSMutableArray alloc] init];
     
-    NSDictionary* dictBrasil = [NSDictionary dictionaryWithObjectsAndKeys:@"Brasil", @"pais", @"Português", @"idioma", @"Brazil.gif", @"bandeira", nil];
+    NSDictionary* dictBrasil = [NSDictionary dictionaryWithObjectsAndKeys:@"Brasil", @"pais", @"Português", @"idioma", @"Brazil.gif", @"bandeira", @"http://www.google.com.br", @"url", nil];
 
     [arrayTabela addObject:dictBrasil];
     
-    NSDictionary* dictArgentina = [NSDictionary dictionaryWithObjectsAndKeys:@"Argentina", @"pais", @"Espanhol", @"idioma", @"Argentina.gif", @"bandeira", nil];
+    NSDictionary* dictArgentina = [NSDictionary dictionaryWithObjectsAndKeys:@"Argentina", @"pais", @"Espanhol", @"idioma", @"Argentina.gif", @"bandeira", @"http://www.facebook.com", @"url", nil];
     
     [arrayTabela addObject:dictArgentina];
     
-    NSDictionary* dictUsa = [NSDictionary dictionaryWithObjectsAndKeys:@"EUA", @"pais", @"Inglês", @"idioma", @"USA.gif", @"bandeira", nil];
+    NSDictionary* dictUsa = [NSDictionary dictionaryWithObjectsAndKeys:@"EUA", @"pais", @"Inglês", @"idioma", @"USA.gif", @"bandeira", @"http://www.globo.com", @"url", nil];
     
     [arrayTabela addObject:dictUsa];
     
@@ -104,6 +104,11 @@
     NSLog(@"Modal");
     ModalView *modalView = [[ModalView alloc] initWithNibName:@"ModalView" bundle:nil];
 //    [self presentModalViewController:modalView animated:YES];
+    
+    NSDictionary *dict =[arrayTabela objectAtIndex:indexPath.row];
+    
+    [modalView setDict:dict];
+    
     [self.navigationController pushViewController:modalView animated:YES];
 }
 
